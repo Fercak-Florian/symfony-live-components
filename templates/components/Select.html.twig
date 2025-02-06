@@ -1,0 +1,11 @@
+<div{{ attributes }}>
+
+    <label for="select">Selectionner un plat : </label>
+    <select id="select" data-model="foods" data-action="live#action" data-live-action-param="change">
+            <option value="pizza">Pizza</option>
+            <option value="tacos">Tacos</option>
+            <option value="sushi">Sushi</option>
+    </select>
+    <div>Valeur de foods : {{ this.foods }}</div>
+    <div>Valeur de result : {{ result }}</div>
+</div>

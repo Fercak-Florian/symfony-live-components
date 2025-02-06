@@ -1,0 +1,16 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello HomeController!{% endblock %}
+
+{% block body %}
+
+    <div class="d-flex">
+        <div class="border border border-5 border-info" style="width: 50vw; height: 50vh">
+            {{ component('Select') }}
+        </div>
+        <div class="border border border-5 border-primary" style="width: 50vw; height: 50vh">
+            <div style="width: 45vh;">{{ component('PieChart') }}</div>
+        </div>
+    </div>
+
+{% endblock %}
