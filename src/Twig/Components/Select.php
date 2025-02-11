@@ -26,7 +26,7 @@ final class Select
     #[LiveAction]
     public function change(): void {
         // do something
-        $this->emit('changeRequest');
+        $this->emit('changeRequest', ['value' => 'test']);
         $this->result = "success";
     }
 }
